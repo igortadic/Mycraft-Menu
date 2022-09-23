@@ -17,6 +17,13 @@ class Item(Draggable):
 			color = color.red,
 			scale = (0.1, 0.1))
 
+	def drag(self):
+		print(f'x:{self.x}')
+		print(f'y:{self.y}')
+
+	def drop(self):
+		print(f'x:{self.x}')
+		print(f'y:{self.y}')
 app = Ursina()
 bg = BG()
 item = Item()
